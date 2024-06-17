@@ -1,6 +1,11 @@
-var fs = require('fs');
-    fs.readdir('Notes', function(err,data){
-        if(err) console.log();
-        else console.log(data)
-    })  
-    
+const express = require('express')
+const app = express()
+
+
+app.set('view engine', 'ejs');
+
+app.get('/', function (req, res) {
+  res.render('index')
+})
+
+app.listen(3000)

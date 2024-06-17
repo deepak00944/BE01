@@ -197,8 +197,7 @@ Packages already made code hota h jiske use se koi feature ban sakta h agar us p
 **Install packages**
 npm install < package_name > or npm i < package_name >
 
-**Use**
-require 
+**Use require** 
 
 ```Javascript
 var oneLinerJoke = require('one-liner-joke');
@@ -265,4 +264,67 @@ fs.readdir('Notes', function(err,data){
  
 # Day19  
 
+## Express
+- express ek package h npm par jo humare node ke app mai help karega routing banane m
+    - Routing - jo bhi urls main / wala pattern dikhta h wo kahlata hai route amd use banane  ka process khelata h routing. 
 
+Way to setup the express:
+```js
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
+app.listen(3000)
+```
+
+### Basics
+
+**Server**
+- Computer machine jo ki internet se connected h aur vo aai hui request ko response kar sake
+
+**Internet**
+- Bhaut sari countries connected h wires ke through country ke states bhi conected h wire ke through and state ke andar cities bhi wire ke through connected h and cities connected h tower ke through. 
+- Example - ek banda australia se india kisi bande ko message karta h jo ki bhopal mai h toh vo message packets or chunks mai divide hoga aur us bande ke internet service provider tak jaayega fir nearest tower tak jaayega uske baad us country ke us area tak jaayega jha se traffic ko dusri country bheja jaata h fir vo us country mai phuuchega through ocean by wires and us bande ke nearest tower tak jaayega and then it would be sent to his phone.
+
+**http**
+- Secured protocol nhi h isse koi bhi website par diya hua data agar fetch hua toh wo pad sakta h 
+
+**https**
+- Secured protocol h data encrypted rehta h
+
+
+# Day20
+
+Learnt about how express is setup and ejs (**embedded javascript**) 
+
+Embedded js is html only with some superpowers.
+
+**Setup ejs:**
+    
+    ejs ka setup routes banne ke phele hota h 
+1. install ejs
+2. make a folder at root level of name views
+3. create a file index.ejs
+4. make the boilerplate of html in ejs file
+5. now setup ejsin your script file.
+
+This is how we can render ejs page on browser.
+```js
+const express = require('express')
+const app = express()
+
+
+app.set('view engine', 'ejs');
+
+app.get('/', function (req, res) {
+  res.render('index')
+})
+
+app.listen(3000)
+
+```
+
+# Day21

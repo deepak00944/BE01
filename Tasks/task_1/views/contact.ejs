@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../stylesheets/contact.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="form-container">
+            <h1>Get in touch</h1>
+            <p>Our friendly team would love to hear from you.</p>
+            <form class="contact-form">
+                <div class="name-fields">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Leave us a message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5JTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Contact Image">
+        </div>
+    </div>
+</body>
+</html>

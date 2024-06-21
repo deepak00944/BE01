@@ -328,3 +328,40 @@ app.listen(3000)
 ```
 
 # Day21
+
+## Setup css
+
+- Create one folder by name public
+- Create 3 folders in public images, javascript, stylesheets
+- Setup in script file 
+- https://expressjs.com/en/starter/static-files.html
+```js
+const path = require('path')
+// Need to write this line to setup css
+app.use(express.static(path.join(__dirname, 'public')))
+```
+
+**Done the task1**
+
+# Day 22
+
+## Nodemon
+- nodemon used to make changes in pages without reloading the server 
+- npm i nodemon -g 
+- npx nodemon < script_filename > <!-- To run the server -->
+
+## Take data
+
+- Need to make some changes in script file
+
+The below code will make changes in the index page wherever username is written.  
+- **Syntax in ejs**: <h1>Welcom back, <%= username%> </h1>
+
+```js
+app.get('/', function (req, res) {
+  res.render('index', {username: "Deepak"})
+})
+```
+
+# Day 23
+

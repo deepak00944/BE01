@@ -1,0 +1,78 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+   font-family: "PT Sans";
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+  width: 25%;
+  background-color: #CAE3DB;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#left h4{
+  color: #464847;
+  font-size: 20px
+}
+
+#line{
+  height: 2px;
+  width: 100%;
+  background-color: rgb(61, 57, 57);
+  margin-top: 10px;
+}
+
+#left .fileicons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons i{
+  cursor: pointer;
+}
+
+#left .fileicons h5{
+  font-weight: 500;
+  color: #464847;
+  font-size: 15px;
+}
+
+.file{
+  padding: 12px 22px;
+  background-color: #aacab9;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #464847;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+form{
+  display: none;
+}
+
+#right{
+  width: 75%;
+  background-color: #b3b5b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right h5{
+  opacity: 20%;
+}

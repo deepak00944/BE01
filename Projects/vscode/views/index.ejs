@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="left">
+      <h4>Sasta vs code</h4>
+      <div id="line"></div>
+      <div class="fileicons">
+        <h5>Folder Name</h5>
+        <div class="icons">
+          <i id="filecreate" class="ri-file-add-fill"></i>
+          <i id="foldercreate" class="ri-folder-add-fill"></i>
+          <i class="ri-refresh-fill"></i>
+        </div>
+      </div>
+      <form id="fileform" action="/filecreate">
+        <input type="text" placeholder="File Name">
+      </form>
+
+      <form id="folderform" action="/foldercreate">
+        <input type="text" placeholder="Folder Name">
+      </form>
+      <div id="files">
+        <div class="file">index.html</div>
+        <div class="file">index.html</div>
+        <div class="file">index.html</div>
+      </div>
+
+    </div>
+    <div id="right">
+      <h5>Nothing here</h5>
+    </div>
+  </div>
+
+  <script>
+    function turnOff(){
+      var allElems = [...document.querySelectorAll('form')];
+      allElems.forEach(function(elem){
+        elem.style = 'none';
+      })
+    };
+    var filecreateicon = document.querySelector('#filecreate');
+    filecreateicon.addEventListener('click', function(){
+      turnOff();
+      document.querySelector('#fileform').style.display = 'initial';
+    })
+
+    var foldercreateicon = document.querySelector('#foldercreate');
+    foldercreateicon.addEventListener('click', function(){
+      turnOff()
+      document.querySelector('#folderform').style.display = 'initial';
+    })
+  </script>
+</body>
+</html>

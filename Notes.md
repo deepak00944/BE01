@@ -339,6 +339,7 @@ app.listen(3000)
 const path = require('path')
 // Need to write this line to setup css
 app.use(express.static(path.join(__dirname, 'public')))
+// Ye line of code route banne ke phele chalta h static means jo humare public m 3 folder h 
 ```
 
 **Done the task1**
@@ -365,3 +366,23 @@ app.get('/', function (req, res) {
 
 # Day 23
 
+Express generator use karte h aapka new app bannane ke liye, kyuki ye app ke andar nahi balki app ko bannae ke liye use hota h, isiliye aap ise global install karein, isse aap kabhi bhi aur kisi bhi location par ek naya app create kar paaoge. 
+
+**npm i express-generator -g**
+
+ab hum kahi bhi kabhi bhi ek naya app create kar sakte hai 
+
+#### Command TO CREATE NEW APP
+- express < app_name> --view=ejs
+- then follow the three steps cd, npm i, run (npx nodemon )
+
+
+# Day24
+
+Started creating vs code.
+
+# Day25
+
+By using the below line we can convert the stuff in array. Although it is node list(querySelectorAll give node list) but still to understand that we used array
+
+**var allElems = [...document.querySelectorAll('form')];**

@@ -386,3 +386,18 @@ Started creating vs code.
 By using the below line we can convert the stuff in array. Although it is node list(querySelectorAll give node list) but still to understand that we used array
 
 **var allElems = [...document.querySelectorAll('form')];**
+
+# Day 26
+- form jab get type ka ho = **req.query**
+- form jab post type ka ho = **req.body**
+- dynamic routes = **req.params**
+
+### Form theory 
+- enter dabate hi data send ho jaata h
+
+# Day 27
+
+- file creation
+
+# Day 28
+
